@@ -5,7 +5,7 @@ This challenge is a bind shell that opens port 1337. If we use netcat to connect
 
 This is an obfuscated file so opening it in IDA will not properly parse the functions of this bind shell. To know all the functions of the bind shell, we first need to write a script to convert the obfuscated file into a form that IDA can read.
 ## 1. Deobfuscating
-If we look at the obfuscated code, we notice that the author has obfuscated the program: After each instruction, the jmp instruction is inserted to jump to the next instruction, so the original code will be cut into sentences with discrete command
+If we look at the obfuscated code, we notice that the author has obfuscated the program: After each instruction, the jmp instruction is inserted to jump to the next instruction, so the original code will be cut into discrete instructions.
 
 ![Obfuscation](./images/obfuscated_instruction1.png)
 
